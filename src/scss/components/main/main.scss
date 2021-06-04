@@ -1,0 +1,18 @@
+.main {
+  @extend %center-position;
+  grid-column: 2 / 3;
+  width: 760px;
+  height: 734px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+  display: grid;
+  &-grid {
+    @extend %center-position;
+    width: 737px;
+    height: 697px;
+    display: grid;
+    grid-template: repeat(auto-fit, 40px) / repeat(auto-fit, 40px);
+    gap: 3.5px
+  }
+}
